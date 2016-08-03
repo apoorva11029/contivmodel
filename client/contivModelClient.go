@@ -482,8 +482,15 @@ type TenantLinkSets struct {
 	Volumes        map[string]Link `json:"Volumes,omitempty"`
 }
 
+type TenantOper struct {
+	NumNet int `json:"numNet,omitempty"` // number of networks
+
+}
+
 type TenantInspect struct {
 	Config Tenant
+
+	Oper TenantOper
 }
 
 type Volume struct {
